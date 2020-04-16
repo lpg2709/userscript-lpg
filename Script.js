@@ -6,6 +6,7 @@
 // @author       You
 // @match      *://*/*
 // @grant        none
+// @noframes
 // ==/UserScript==
 
 var teste = 'aaa';
