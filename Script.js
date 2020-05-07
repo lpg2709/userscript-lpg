@@ -9,19 +9,9 @@
 // @noframes
 // ==/UserScript==
 
-var teste = 'aaa';
-
 (function() {
     'use strict';
-    /**********
-     * CONSTS *
-     **********/
-    window.request.GET = 'GET';
-    window.request.POST = 'POST';
 
-    /********************
-     * FUNCTIONS: PRINT *
-     ********************/
     window.request = function (method, url, data){
         return new Promise(function (resolve, reject) {
             var req = new XMLHttpRequest();
@@ -41,9 +31,9 @@ var teste = 'aaa';
         });
     };
 
-    /*********************
-     * FUNCTIONS: RETURN *
-     *********************/
+    window.request.GET = 'GET';
+    window.request.POST = 'POST';
+
     window.request_r = function (method, url, data){
         return new Promise(function (resolve, reject) {
             var req = new XMLHttpRequest();
@@ -63,8 +53,5 @@ var teste = 'aaa';
         });
     };
 
-    /*****************
-     * DOCUMENTATION *
-     *****************/
-    console.log(`request v1.0 working!\nHow use:\n%c request%c(%cmethod%c, %curl%c, %cdata%c);\nWhere: \n %cmethod%c: %cPOST %cor %cGET \n %curl%c: %chttp %cor %chttps\n %cdata%c: request body, only for %cPOST`, 'color: #66d9ef;', 'color: #000;', 'color: #fd971f;','color: #000;', 'color: #fd971f;','color: #000;', 'color: #fd971f;','color: #000;', 'color: #fd971f;','color: #000;', 'color: #a6e22e;','color: #000;', 'color: #a6e22e;','color: #fd971f;','color: #000;', 'color: #a6e22e;','color: #000;', 'color: #a6e22e;', 'color: #fd971f;','color: #000;', 'color: #a6e22e;');
+    console.log(`request v1.5 working!\nHow use:\n%c request%c(%cmethod%c, %curl%c, %cdata%c);\nWhere: \n %cmethod%c: %cPOST %cor %cGET \n %curl%c: %chttp %cor %chttps\n %cdata%c: request body, only for %cPOST`, 'color: #66d9ef;', 'color: #000;', 'color: #fd971f;','color: #000;', 'color: #fd971f;','color: #000;', 'color: #fd971f;','color: #000;', 'color: #fd971f;','color: #000;', 'color: #a6e22e;','color: #000;', 'color: #a6e22e;','color: #fd971f;','color: #000;', 'color: #a6e22e;','color: #000;', 'color: #a6e22e;', 'color: #fd971f;','color: #000;', 'color: #a6e22e;');
 })();
