@@ -13,3 +13,7 @@ When called, open the video in new tab with full size.
 ## Fixed Webplayer Spotify
 
 Fix the player of spotify, on bottom.
+
+## Dark Theme Fixer
+
+Used to fix Dark Theme in websites, this a complement for [Dark Reader extention](https://darkreader.org/).
