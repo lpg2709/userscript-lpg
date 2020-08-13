@@ -1,6 +1,6 @@
 # Scripts in this repository
 
-All scripts needed tampermonkey.
+All scripts needed [tampermonkey](http://www.tampermonkey.net/).
 
 ## Request in Console
 
