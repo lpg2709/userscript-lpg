@@ -15,9 +15,11 @@
             console.log("Iniciando Script");
             var html = document.getElementsByTagName("html");
             console.log("Pegando ID");
-            var video_id = (document.URL).split("v=")[1];
+            var video_id = ((document.URL).split("v=")[1]).split("&")[0];
+            console.log(video_id)
+            var videoTitle = document.querySelector('yt-formatted-string[class="style-scope ytd-video-primary-info-renderer"]').innerText;
             console.log("Gerenando pagina");
-            var iframe = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Full Video</title></head><style type="text/css">*{padding: 0;margin: 0;box-sizing: border-box;}body, html{background-color: #000;}#yt_video{width: 100vw;height: calc(100vh - 4px);}</style><body><iframe id="yt_video" src="https://www.youtube.com/embed/${video_id}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></body></html>`
+            var iframe = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>${videoTitle}</title></head><style type="text/css">*{padding: 0;margin: 0;box-sizing: border-box;}body, html{background-color: #000;}#yt_video{width: 100vw;height: calc(100vh - 4px);}</style><body><iframe id="yt_video" src="https://www.youtube.com/embed/${video_id}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></body></html>`
             console.log("Abrindo pagina");
             var myWindow = window.open("/", "_blank");
             myWindow.document.write(iframe);
