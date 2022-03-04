@@ -4,6 +4,7 @@
 // @description  Create a page with a full video
 // @author       lpg2709
 // @match        https://www.youtube.com/*
+// @icon         https://www.youtube.com/s/desktop/ec801097/img/favicon_144x144.png
 // @grant        none
 // ==/UserScript==
 
