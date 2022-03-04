@@ -4,6 +4,7 @@
 // @description  Open all uploaded images on the instagram page in tab
 // @author       lpg2709
 // @match        https://www.instagram.com/
+// @icon         https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico
 // @grant        none
 // ==/UserScript==
 
