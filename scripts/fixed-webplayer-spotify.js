@@ -4,6 +4,7 @@
 // @description  Put the player of webplayer Spotify fixed in the bottom, when window height is less then 590px
 // @author       lpg2709
 // @match        https://open.spotify.com/*
+// @icon         https://open.scdn.co/cdn/images/favicon32.8e66b099.png
 // @grant        none
 // ==/UserScript==
 
