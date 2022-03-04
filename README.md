@@ -1,19 +1,9 @@
 # Scripts in this repository
 
-All scripts needed [tampermonkey](http://www.tampermonkey.net/).
+All scripts needed userscript. Like [Violentmonkey](https://violentmonkey.github.io/)
 
-## Request in Console
+## How use
 
-Script to make request from console bowser.
-
-## Full-page-youtube-video
-
-When called, open the video in new tab with full size.
-
-## Fixed Webplayer Spotify
-
-Fix the player of spotify, on bottom.
-
-## Dark Theme Fixer
-
-Used to fix Dark Theme in websites, this a complement for [Dark Reader extention](https://darkreader.org/).
+Select the desired script, browse and click on Raw mode. In the configuration of
+the chosen extension to execute the scripts, import by the URL, and paste the
+URL of the script in Raw mode.
