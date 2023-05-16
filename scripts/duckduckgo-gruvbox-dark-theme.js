@@ -1,15 +1,17 @@
 // ==UserScript==
-// @name        GruvBox Dark Theme
-// @namespace   https://duckduckgo.com/
-// @match       https://duckduckgo.com/*
-// @grant       none
-// @version     1.0
-// @author      -
+// @name         GruvBox Dark Theme
+// @version      1.2
+// @description  Gruvbox dark theme for DuckDuckGo.
+// @author       lpg2709
+// @namespace    https://duckduckgo.com/
+// @match        https://duckduckgo.com/*
+// @homepage     https://github.com/lpg2709/userscript-lpg
+// @grant        none
 // ==/UserScript==
 const config = {
 	// https://duckduckgo.com/params
 	// https://duckduckgo.com/settings
-  // https://github.com/morhetz/gruvbox
+	// https://github.com/morhetz/gruvbox
 	
 	// Page Appearance
 	"ae": "t",         // Theme: Terminal
