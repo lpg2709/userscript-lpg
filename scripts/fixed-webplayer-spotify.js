@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         Fixed webplayer Spotify
 // @version      3.0
-// @description  Put the player of webplayer Spotify fixed in the bottom, when window height is less then 590px
+// @description  Put the player of webplayer Spotify fixed in the bottom.
 // @author       lpg2709
 // @match        https://open.spotify.com/*
 // @icon         https://open.spotifycdn.com/cdn/images/favicon16.1c487bff.png
+// @homepage     https://github.com/lpg2709/userscript-lpg
 // @grant        none
 // ==/UserScript==
 
@@ -16,7 +17,6 @@ function fixedPlayer() {
 		a.style.backgroundColor = "#000"
 		return true;
 	}
-
 	return false;
 }
 
@@ -37,6 +37,5 @@ function fixedPlayer() {
 			fixedPlayer();
 		}
 	});
-
 })();
 
