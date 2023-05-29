@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Fixed webplayer Spotify
-// @version      3.0
+// @version      3.1
 // @description  Put the player of webplayer Spotify fixed in the bottom.
 // @author       lpg2709
 // @match        https://open.spotify.com/*
@@ -10,7 +10,7 @@
 // ==/UserScript==
 
 function fixedPlayer() {
-	var a = document.querySelector(".Root__now-playing-bar");
+	var a = document.querySelector("footer");
 	if(typeof(a) !== "undefined"){
 		a.style.position = 'fixed';
 		a.style.bottom = '0';
