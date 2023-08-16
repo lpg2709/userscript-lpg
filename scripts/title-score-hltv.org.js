@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Title Scores - hltv.org
 // @description  Shows live scores from HLTV match pages in the title bar.
-// @version      2.0
+// @version      2.1
 // @author       lpg2709
 // @match        https://www.hltv.org/matches/*
 // @icon         https://www.hltv.org/img/static/favicon/apple-touch-icon.png
@@ -42,21 +42,29 @@ function getMapWins(ctName, tName) {
 						break;
 					}
 				}
-			}
-			if(leftWin)
+				if(rightWin){
+					if(teamNameRight == tName)
+						trWins++;
+					if(teamNameRight == ctName)
+						ctWins++;        
+				}
+			} else {
 				if(teamNameLeft == ctName)
 					ctWins++;
-			if(rightWin)
 				if(teamNameRight == tName)
 					trWins++;
+			}
 		}
 	}
 
 	return [ctWins, trWins];
 }
 
+window.getMapWins = getMapWins;
+
 window.setInterval(function(){
 	var ctScore = document.getElementsByClassName("ctScore")[0];
+	if(ctScore == undefined) return;
 	var tScore = document.getElementsByClassName("tScore")[0];
 
 	var ctName = document.getElementsByClassName("ctTeamHeaderBg")[0].childNodes[0].childNodes[0].textContent.trim();
