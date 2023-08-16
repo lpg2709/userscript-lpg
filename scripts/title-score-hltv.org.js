@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Title Scores - hltv.org
 // @description  Shows live scores from HLTV match pages in the title bar.
-// @version      2.1
+// @version      2.2
 // @author       lpg2709
 // @match        https://www.hltv.org/matches/*
 // @icon         https://www.hltv.org/img/static/favicon/apple-touch-icon.png
@@ -51,7 +51,7 @@ function getMapWins(ctName, tName) {
 			} else {
 				if(teamNameLeft == ctName)
 					ctWins++;
-				if(teamNameRight == tName)
+				if(teamNameLeft == tName)
 					trWins++;
 			}
 		}
