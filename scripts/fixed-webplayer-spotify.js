@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Fixed webplayer Spotify
-// @version      3.1
+// @version      3.2
 // @description  Put the player of webplayer Spotify fixed in the bottom.
 // @author       lpg2709
 // @match        https://open.spotify.com/*
@@ -14,7 +14,8 @@ function fixedPlayer() {
 	if(typeof(a) !== "undefined"){
 		a.style.position = 'fixed';
 		a.style.bottom = '0';
-		a.style.backgroundColor = "#000"
+		a.style.backgroundColor = "#000";
+		a.style.width = "100vw";
 		return true;
 	}
 	return false;
