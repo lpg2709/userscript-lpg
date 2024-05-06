@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Video Speed Control Script
 // @description  Controls any HTML5 video playback speed by pressing shortcut keys
-// @version      1.0
+// @version      1.0.1
 // @author       lpg2709
 // @include      *
 // @icon         https://lh3.googleusercontent.com/5yY1QQ__b0c2ZLmmi6mcdjX-9V3LAgXhgUaZtsICFTjeQV0S6xkVncmV99oEtU-H8WN8dZpWh_cycXSXoyffADsoYg=w128-h128-e365-rj-sc0x00ffffff
@@ -68,7 +68,7 @@ function handlePressedKey(event) {
       video.playbackRate += 0.1;
       break;
     case 'z':
-      video.currentTime += 5;
+      video.currentTime -= 5;
       break;
     case 'x':
       video.currentTime += 5;
