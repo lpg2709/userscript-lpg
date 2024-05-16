@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove Side ADDs - hltv.org
 // @description  Remove side adds from HTTV.org
-// @version      1.1
+// @version      1.2
 // @author       lpg2709
 // @match        https://www.hltv.org/*
 // @icon         https://www.hltv.org/img/static/favicon/apple-touch-icon.png
@@ -16,6 +16,8 @@ var interval = setInterval(function() {
   var topAdds = document.querySelector(".logoCon");
   var bgPadding = document.querySelector(".bgPadding");
   var right2Col = document.querySelector(".right2Col");
+  var presentedByLeft = document.querySelectorAll(".presented-by-row");
+  var addLinkNoFollow = document.querySelectorAll('a[rel="nofollow"]');
 
   if (body != null) {
     body.style = "";
@@ -51,6 +53,18 @@ var interval = setInterval(function() {
         if (e.classList != undefined)
           if (e.classList.value != "")
             e.remove();
+      }
+    }
+
+    if(presentedByLeft != null) {
+      for (let e of presentedByLeft) {
+        e.remove();
+      }
+    }
+
+    if(addLinkNoFollow != null) {
+      for(let e of addLinkNoFollow) {
+        e.parentNode.remove()
       }
     }
 
