@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove Side ADDs - hltv.org
 // @description  Remove side adds from HTTV.org
-// @version      1.2
+// @version      1.2.1
 // @author       lpg2709
 // @match        https://www.hltv.org/*
 // @icon         https://www.hltv.org/img/static/favicon/apple-touch-icon.png
@@ -18,6 +18,7 @@ var interval = setInterval(function() {
   var right2Col = document.querySelector(".right2Col");
   var presentedByLeft = document.querySelectorAll(".presented-by-row");
   var addLinkNoFollow = document.querySelectorAll('a[rel="nofollow"]');
+  var horizontalWidget = document.querySelectorAll('.horizontal-widget');
 
   if (body != null) {
     body.style = "";
@@ -64,6 +65,13 @@ var interval = setInterval(function() {
 
     if(addLinkNoFollow != null) {
       for(let e of addLinkNoFollow) {
+        e.parentNode.remove()
+      }
+    }
+
+    if(horizontalWidget != null) {
+      // Remove bet on matchs page
+      for(let e of horizontalWidget) {
         e.parentNode.remove()
       }
     }
