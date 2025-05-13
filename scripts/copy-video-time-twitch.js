@@ -4,7 +4,7 @@
 // @version      1.0
 // @author       lpg2709
 // @match        https://player.twitch.tv/*
-// @icon         Icon
+// @icon         https://cdn-icons-png.flaticon.com/128/3291/3291659.png
 // @grant        none
 // @homepage     https://github.com/lpg2709/userscript-lpg
 // ==/UserScript==
